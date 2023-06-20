@@ -26,9 +26,9 @@ def extract_data_cached(data, columns): #improve performance
 class Vi:
     def __init__(self):
         self.conx,self.cursor = get_cursor()
-        self.cus_ID = st.sidebar.text_input('Customer ID:')
-        self.pro_ID = st.sidebar.text_input('Project ID:')
-        self.batch_ID = st.sidebar.text_input('Batch ID (mumber only):')
+        self.cus_ID = st.sidebar.text_input('Customer ID (NGUY to test):')
+        self.pro_ID = st.sidebar.text_input('Project ID (NGUY-01 to test):')
+        self.batch_ID = st.sidebar.text_input('Batch ID (mumber only) (1 to test):')
  
     def get_options(self): #show multi parameter selection in figures - copy code from open source
         # ------ query to extral col name of databse----------

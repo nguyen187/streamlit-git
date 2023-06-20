@@ -112,7 +112,7 @@ def Login_2(w =False):
         #st.write("# Welcome to BioPharm Website! 👋") #w=true in home 
         #st.write('Hello, %s!' % st.experimental_user.email)
         #st.write('server: {sv}'.format(sv = server))
-        image = Image.open('anhbia.png')
+        image = Image.open('./image/anhbia.png')
         st.image(image)
     return True
 
@@ -125,8 +125,8 @@ def Login_3(w = True):
        'test'
    }
     col1, col2 = st.columns([1, 1])
-    user = col1.text_input('User:')
-    password = col2.text_input('Password:',type='password')
+    user = col1.text_input('User(default: test):')
+    password = col2.text_input('Password(default: test):',type='password')
     if st.button('Login'):
         if user in admin and password in Pa :
             st.write('Hello, %s!' % user)
